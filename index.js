@@ -67,6 +67,8 @@ function ejercicio1(){
   lienzo1.lineTo(300,150);// trazo la linea hasta este punto
   lienzo1.stroke();// levanto el lápiz
   lienzo1.closePath();// me alisto para realizar otra parte del dibujo
+
+
  }
  function draw() {
   var canvas = document.getElementById('lienzo1');
@@ -81,6 +83,12 @@ function ejercicio1(){
     ctx.arc(60,65,5,0,Math.PI*2,true);  // Ojo izquierdo
     ctx.moveTo(95,65);
     ctx.arc(90,65,5,0,Math.PI*2,true);  // Ojo derecho
+    ctx.stroke();
+
+    //Paticas
+    var ctx = canvas.getContext("2d");
+    ctx.moveTo(0,0);
+    ctx.lineTo(200,100);
     ctx.stroke();
   }
 }
